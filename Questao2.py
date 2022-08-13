@@ -13,13 +13,9 @@ def verificar(n):
   
 n = int(input("Digite um número: "))
 
-if n == 1 or n ==2 or n ==3 or n ==5:
+if n == 1 or n ==2 or n ==3 or n ==5 or verificar(n):
   print("O número pertence a sequência de Fibonacci")
 else:
-  retorno = verificar(n)
-  if retorno:
-    print("O número pertence a sequência de Fibonacci")
-  else:
-     print("O número não pertence a sequência de Fibonacci")
+  print("O número não pertence a sequência de Fibonacci")
   
   
